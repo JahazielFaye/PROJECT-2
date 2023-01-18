@@ -1,0 +1,52 @@
+body {
+  color:aliceblue;
+  background-color: black;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+/*style for form elemets*/
+form {
+  display: inline-block;
+  text-align: left;
+}
+/*some styles for the label text*/
+label {
+  font-weight: bold;
+}
+/*signup and signin text link color*/
+.signup-text, .signin-text{
+  color: orangered;
+}
+/*orange hubl logo*/
+.logo{
+  width: 500px;
+  height: 300px;
+  display:inline-block;
+  /*style for email and password fields*/
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+/*styling for submit button*/
+input[type="submit"] {
+  width: 100%;
+  background-color: #10608e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none; /*removing the border for the button*/
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*background color change of the submit button when hovered over it*/
+input[type="submit"]:hover {
+  background-color: #bc7440;
+}
