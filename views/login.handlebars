@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
+
+<!---div for container that consists email/password and log-->
 <body>
-    
+    <div class="container">
+        <h1>Sign In</h1>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <br><br>
+          <input type="submit" value="Sign In">
+        </form>
+        <p>Don't have an account? <a href="#" id="signup-link" class="signup-text">Sign Up</a></p>
+        <!--logo -->
+        <img src="./css/Hubl logo.png" alt="Logo" class="logo">
+      </div>
+      
+      <!--Signup container-->
+      <div class="container" id="signup-container" style="display:none;">
+        <h1>Sign Up</h1>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <br>
+          <label for="password-confirm">Confirm Password:</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <br><br>
+          <input type="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="#" id="signin-link" class="signin-text">Sign In</a></p>
+      </div>
+      <script src="../public/js/validation.js"></script>
+      <script src="../public/js/SignIn&Up.js"></script>
 </body>
 </html>
