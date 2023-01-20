@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="./Assets/profile.css">
+
+</head>
+
+<body> 
+    <ul class="dropdown menu" data-dropdown-menu>
+        <li>
+          <a href="#">Categories</a>
+          <ul class="menu">
+            <li><a href="#">Coffee Shops</a></li>
+            <li><a href="#">Parks</a></li>
+            <li><a href="#">Restaurants</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="nav">Profile</a></li>
+        <li><a href="#" class="nav">Logout</a></li>
+      </ul> 
+<form>
+        <div class="row">
+            <div class="medium-6 medium-push-3 columns">
+                <textarea placeholder="Your New Post Here"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-6 medium-push-3 columns">
+                <button class="button">New Recommendations</button>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="profile.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>
