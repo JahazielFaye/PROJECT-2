@@ -1,6 +1,61 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Submissions } = require('../../models');
 
+// get all users
+router.get('/', async (req, res) => {
+  const userData = await User.findAll()
+  return res.json(userData);
+  });
+
+  // get all submissions
+  router.get('/submissions', async (req, res) => {
+    const submissionData = await Submissions.findAll()
+    return res.json(submissionData);
+    });
+
+    // create new user
+router.post('/', async (req, res) => {
+  try {
+    const userData = await User.create({
+      username: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
+    });
+
+    req.session.save(() => {
+      req.session.loggedIn = true;
+
+      res.status(200).json(userData);
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+// create new submission
+router.post('/submissions/user/:id', async (req, res) => {
+  try {
+    const submissionData = await Submissions.create({
+      name: req.body.name,
+      description: req.body.description,
+      website: req.body.website,
+      user_id: req.params.id,
+    });
+
+    req.session.save(() => {
+      req.session.loggedIn = true;
+
+      res.status(200).json(submissionData);
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
+    // login
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });

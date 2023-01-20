@@ -16,7 +16,7 @@ Submissions.init(
       allowNull: false,
     },
     description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       website: {
@@ -35,7 +35,7 @@ Submissions.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'gallery',
+    modelName: 'submissions',
   }
 );
 
