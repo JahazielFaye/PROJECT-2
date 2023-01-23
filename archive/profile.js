@@ -25,3 +25,19 @@ button.addEventListener("click", function(e) {
   // Clear the textarea value
   textarea.value = "";
 });
+
+var template = Handlebars.compile(document.getElementById("template").innerHTML);
+var html = template(data);
+document.getElementById("some-element").innerHTML = html;
+var data = {
+  categories: [
+      {
+          name: "Categories",
+          subcategories: [
+              { name: "Coffee Shops" },
+              { name: "Parks" },
+              { name: "Restaurants" }
+          ]
+      }
+  ]
+};
