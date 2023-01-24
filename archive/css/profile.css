@@ -1,80 +1,79 @@
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 ul.dropdown {
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  
-  ul.dropdown li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  ul.dropdown li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  ul.dropdown li a:hover {
-    color: #007aff;
-  }
-  
-  ul.dropdown li ul.menu {
-    display: none;
-    position: absolute;
-    background-color: #f2f2f2;
-    min-width: 150px;
-  }
-  
-  ul.dropdown li:hover ul.menu {
-    display: block;
-  }
-  
-  ul.dropdown li ul.menu li {
-    display: block;
-  }
-  
-  ul.dropdown li ul.menu li a {
-    padding: 10px;
-  }
-  
-textarea {
-    width: 60rem;
-    padding: 25px;
-    margin-bottom: 1rem;
-    border: 2px solid rgb(134, 90, 210);
-    border-radius: 2rem;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-  
-  button.button {
-    background-color: #7f3cc1;
-    color: #fff;
-    padding: 15px;
-    border-radius: 0.4rem;
-    position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-  }
+  background-color: #f2f2f2;
+  padding: 10px;
+}
 
-  .profile-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    top: 40%;
-        left: -70%;
-        transform: translate(50%, 50%);
-  }
-  
-  
-  
+ul.dropdown li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul.dropdown li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.dropdown li a:hover {
+  color: #007aff;
+}
+
+ul.dropdown li ul.menu {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 150px;
+}
+
+ul.dropdown li:hover ul.menu {
+  display: block;
+}
+
+ul.dropdown li ul.menu li {
+  display: block;
+}
+
+ul.dropdown li ul.menu li a {
+  padding: 10px;
+}
+
+textarea {
+  width: 60rem;
+  padding: 25px;
+  margin-bottom: 1rem;
+  border: 2px solid rgb(134, 90, 210);
+  border-radius: 2rem;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+button.button {
+  background-color: #7f3cc1;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0.4rem;
+  position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 40%;
+      left: -70%;
+      transform: translate(50%, 50%);
+}
+
+

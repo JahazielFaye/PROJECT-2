@@ -26,6 +26,7 @@ button.addEventListener("click", function(e) {
   textarea.value = "";
 });
 
+//handlebars 
 var template = Handlebars.compile(document.getElementById("template").innerHTML);
 var html = template(data);
 document.getElementById("some-element").innerHTML = html;
