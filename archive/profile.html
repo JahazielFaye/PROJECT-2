@@ -8,6 +8,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="./css/profile.css" />
     <link rel="stylesheet" href="./Assets/profile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
 </head>
 
@@ -24,15 +25,15 @@
         <li><a href="#" class="nav">Profile</a></li>
         <li><a href="#" class="nav">Logout</a></li>
       </ul> 
-<form>
+<form id="postForm">
         <div class="row">
             <div class="medium-6 medium-push-3 columns">
-                <textarea placeholder="Your New Post Here"></textarea>
+                <textarea id="newPost" placeholder="Your New Post Here"></textarea>
             </div>
         </div>
         <div class="row">
             <div class="medium-6 medium-push-3 columns">
-                <button class="button">New Recommendations</button>
+                <button class="button" id="button">New Recommendations</button>
             </div>
         </div>
     </form>
