@@ -2,6 +2,9 @@ var postForm = document.getElementById("postForm");
 var newPost = document.getElementById("newPost");
 var button = document.getElementById("button");
 
+const handlebars = require('handlebars');
+
+
 
 
 if(postForm){
@@ -19,7 +22,7 @@ if(postForm){
     });
 }
 
-var data = {
+const data = {
   categories: [
       {
           name: "Categories",
@@ -32,5 +35,5 @@ var data = {
   ]
 };
 var template = Handlebars.compile(document.getElementById("template").innerHTML);
-var html = template(data);
+const html = template(data);
 document.getElementById("some-element").innerHTML = html;
