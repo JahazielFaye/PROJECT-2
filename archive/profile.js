@@ -1,36 +1,28 @@
-// Get the form element
-var form = document.getElementsByTagName("form")[0];
+var postForm = document.getElementById("postForm");
+var newPost = document.getElementById("newPost");
+var button = document.getElementById("button");
 
-// Get the textarea element
-var textarea = form.getElementsByTagName("textarea")[0];
+const handlebars = require('handlebars');
 
-// Get the button element
-var button = form.getElementsByTagName("button")[0];
 
-// Listen for the click event on the button
-button.addEventListener("click", function(e) {
-  // Prevent the default behavior
-  e.preventDefault();
 
-  // Get the textarea value
-  var comment = textarea.value;
 
-  // Create a new paragraph element with the textarea value
-  var newComment = document.createElement("p");
-  newComment.innerHTML = comment;
+if(postForm){
+    var newPost = document.getElementById("newPost");
+    var button = document.getElementById("button");
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      var comment = newPost.value;
+      if (comment.trim() !== "") {
+        var newComment = document.createElement("p");
+        newComment.innerHTML = comment;
+        postForm.appendChild(newComment);
+        newPost.value = "";
+      }
+    });
+}
 
-  // Append the new paragraph element to the form
-  form.appendChild(newComment);
-
-  // Clear the textarea value
-  textarea.value = "";
-});
-
-//handlebars 
-var template = Handlebars.compile(document.getElementById("template").innerHTML);
-var html = template(data);
-document.getElementById("some-element").innerHTML = html;
-var data = {
+const data = {
   categories: [
       {
           name: "Categories",
@@ -42,3 +34,6 @@ var data = {
       }
   ]
 };
+var template = Handlebars.compile(document.getElementById("template").innerHTML);
+const html = template(data);
+document.getElementById("some-element").innerHTML = html;
