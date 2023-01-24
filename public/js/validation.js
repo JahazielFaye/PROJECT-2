@@ -1,7 +1,7 @@
-let signupForm = document.getElementById("signup-form");  //Getting sign-up form element
-let email = document.getElementById("email");  //get the email field
-let password = document.getElementById("password");
-let confirmPassword = document.getElementById("password_confirm");
+let signupForm = document.getElementById("signup-container");  //Getting sign-up form element
+let email = document.getElementById("email-sugnup");  //get the email field
+let password = document.getElementById("password-signup");
+let confirmPassword = document.getElementById("password-confirm");
 let errorMessage = document.getElementById("error-message"); //get the error message element
 
 //Listens for a submit event on the signup form
