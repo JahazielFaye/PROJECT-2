@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-
-</head>
-<body>
-
-</body>
-</html>
+<script id="template" type="text/x-handlebars-template">
+  <body> 
+    <ul class="dropdown menu" data-dropdown-menu>
+        {{#each categories}}
+        <li>
+          <a href="#">{{name}}</a>
+          <ul class="menu">
+            {{#each subcategories}}
+            <li><a href="#">{{name}}</a></li>
+            {{/each}}
+          </ul>
+        </li>
+        {{/each}}
+        <li><a href="#" class="nav">Profile</a></li>
+        <li><a href="#" class="nav">Logout</a></li>
+    </ul> 
+  

@@ -1,3 +1,11 @@
-{{#each content as |content|}}
-{{> content-details}}
+{{#each submissions as |submission|}}
+<div class="callout secondary large">
+      <h5>
+        {{submissions.name}}
+      </h5>
+      <p>
+        {{submissions.description}}
+      </p>
+      <a href="#">{{submissions.website}}</a>
+</div>
 {{/each}}
