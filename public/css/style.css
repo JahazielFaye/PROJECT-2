@@ -29,7 +29,8 @@ label {
   /*style for email and password fields*/
 }
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
