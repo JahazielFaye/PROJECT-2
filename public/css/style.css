@@ -51,3 +51,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #bc7440;
 }
+
+#logout {
+  color: blue;
+}
