@@ -43,7 +43,7 @@ ul.dropdown li ul.menu li a {
   padding: 10px;
 }
 
-textarea {
+#postForm {
   width: 60rem;
   padding: 25px;
   margin-bottom: 1rem;
@@ -55,15 +55,34 @@ textarea {
       transform: translate(-50%, -50%);
     }
 
+    #posts {
+      width: 60rem;
+      padding: 25px;
+      margin-bottom: 1rem;
+      border: 2px solid rgb(134, 90, 210);
+      border-radius: 2rem;
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
 button.button {
   background-color: #7f3cc1;
   color: #fff;
   padding: 15px;
   border-radius: 0.4rem;
-  position: absolute;
+  /* position: absolute;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
+}
+
+.deleteBtn {
+  background-color: #da350c;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0.4rem;
 }
 
 .profile-icon {

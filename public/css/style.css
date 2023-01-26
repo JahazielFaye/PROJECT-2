@@ -16,6 +16,7 @@ form {
 /*some styles for the label text*/
 label {
   font-weight: bold;
+  color: white;
 }
 /*signup and signin text link color*/
 .signup-text, .signin-text{
