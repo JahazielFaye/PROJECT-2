@@ -22,38 +22,36 @@ window.onclick = function(event) {
 //     console.log('test session', session)
 //     alert('test');
 // }
-// const newPostHandler = async (event) => {
-//     event.preventDefault();
-//     event.stopPropagation();
-//   console.log(document.cookie);
-//     const name = document.querySelector('#postName').value.trim();
-//     const description = document.querySelector('#postDescription').value.trim();
-//     const website = document.querySelector('#postWebsite').value.trim();
-//     if (name && description && website) {
-//         const session = await fetch ('api/users/session');
-//         console.log(session);
-//         const user = await fetch ('api/users/user/email');
-//       const response = await fetch(`api/users/submissions/user/${user.id}`, {
-//         method: 'POST',
-//         body: JSON.stringify({ name, description, website }),
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//       });
-//   console.log(response);
-//       if (response.ok) {
-//         // document.location.replace('/profile');
-//       } else {
-//         alert('Failed to create new post');
-//       }
-//     }
-//   };
+const feed = async () => {
+    // event.preventDefault();
+        const feedData = await fetch ('/api/users/submissions');
+        const feedInfo = await feedData.json();
+        console.log(feedInfo);
+        feedResults(feedInfo);
+}
   
-//   document
-//     .querySelector('#postForm')
-//     .addEventListener('submit', newPostHandler);
+feed();
 
 //     document
 //     .querySelector('#testBtn')
 //     .addEventListener('click', test);
-  
+var feedBoxEl = document.querySelector(".feed");
+var feedResults = function (data) {
+    console.log(data);
+    $(".feed").empty();
+    document.querySelector(".feed").style.display = "block";
+    for (var i = 0; i < data.length; i++) {
+      var repoInfo =
+        "Name: " +
+        data[i].name +
+        "<br>Dexcription" +
+        data[i].description +
+        "<br>website: " +
+        `<a href="${data[i].website}" target="_blank">${data[i].website}</a>`+
+        "<br><br><br><br>";
+      var repoEl = document.createElement("div");
+      repoEl.classList = "feed-results";
+      repoEl.innerHTML = repoInfo;
+      feedBoxEl.appendChild(repoEl);
+    }
+  };

@@ -2,17 +2,16 @@ const router = require('express').Router();
 const { User, Submissions } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
+    const feedData = await Submissions.findAll({
+      attributes: ['name', 'description', 'website'] ,
     });
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const feed = feedData.map((project) => project.get({ plain: true }));
 
     res.render('feed', {
-      users,
+      feed,
       logged_in: req.session.logged_in,
     });
   } catch (err) {

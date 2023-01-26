@@ -1,11 +1,15 @@
-{{#each submissions as |submission|}}
-<div class="callout secondary large">
-      <h5>
-        {{submissions.name}}
-      </h5>
-      <p>
-        {{submissions.description}}
-      </p>
-      <a href="#">{{submissions.website}}</a>
-</div>
-{{/each}}
+<div id="posts">
+  <div class="feed">
+{{!-- {{#each submissions as |submission|}}
+{{> submission-details}}
+      <div class="col-md-8">
+        <h6>{{submission.name}}</h6>
+        <br>
+        <p>{{submission.description}}</p>
+        <br>
+        <a href="{{submission.website}}">{{submission.website}}</a>
+      </div>
+{{/each}} --}}
+</div></div>
+
+    <script src="/js/feed.js"></script>

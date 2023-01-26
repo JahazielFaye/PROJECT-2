@@ -96,3 +96,9 @@ button.button {
 }
 
 
+.feed {
+  background-color: #7f3cc1;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0.4rem;
+}
