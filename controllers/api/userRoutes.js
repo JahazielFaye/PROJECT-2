@@ -7,6 +7,12 @@ router.get('/', async (req, res) => {
   return res.json(userData);
   });
 
+  router.get('/user/:email', async (req, res) => {
+    // const userEmail = document.cookie
+    const userData = await User.findOne({ where: { email: req.params.email  } })
+    return res.json(userData);
+    });
+
   // get all submissions
   router.get('/submissions', async (req, res) => {
     const submissionData = await Submissions.findAll()
