@@ -54,5 +54,11 @@ input[type="submit"]:hover {
 }
 
 #logout {
-  color: blue;
+  color: gray;
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+#postForm {
+  margin-top: 100px;
 }
