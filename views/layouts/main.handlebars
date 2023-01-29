@@ -13,13 +13,22 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
+        <ul class="menu align-right">
+            <li><a href="/">Home</a></li>
+            {{#if logged_in}}
+            <li><a href="/profile">Profile</a></li>
+            <li><button class="no-button" id="logout">Logout</button></li>
+            {{else}}
+            <li><a href="/login">Login</a></li>
+            {{/if}}
+        </ul>
+        <!--<a href="/">Home</a>
         {{#if logged_in}}
         <a href="/profile">Profile</a>
         <button class="no-button" id="logout">Logout</button>
         {{else}}
         <a href="/login">Login</a>
-        {{/if}}
+        {{/if}} -->
     </nav>
     <div>
         {{{ body }}}
