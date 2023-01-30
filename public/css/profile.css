@@ -1,61 +1,27 @@
 body {
   background-color: whitesmoke;
 }
-ul.dropdown {
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-ul.dropdown li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-ul.dropdown li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
-
-ul.dropdown li a:hover {
-  color: #007aff;
-}
-
-ul.dropdown li ul.menu {
-  display: none;
-  background-color: #f2f2f2;
-  min-width: 150px;
-}
-
-ul.dropdown li:hover ul.menu {
-  display: block;
-}
-
-ul.dropdown li ul.menu li {
-  display: block;
-}
-
-ul.dropdown li ul.menu li a {
-  padding: 10px;
-}
 
 #postForm {
   width: 60rem;
   padding: 25px;
   margin-bottom: 1rem;
-  border: 2px solid rgb(134, 90, 210);
+  background-image: url('/images/galaxy.jpg'); /*
+  Background image by [Photographer's Name] on Pexels
+  Source: https://www.pexels.com/photo/photo-url
+*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 2rem;
   margin-left: 250px;
-    }
+}
 
     #posts {
       width: 60rem;
-      padding: 25px;
+      padding: 20px;
       margin-top: 100px;
-      border: 2px solid rgb(134, 90, 210);
+      border: 1px solid rgb(37, 142, 184);
       border-radius: 2rem;
       margin-left: 250px;
         }
@@ -90,8 +56,8 @@ button.button {
 
 
 .feed {
-  background-color: #7f3cc1;
-  color: #fff;
+  background-color: #333;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  color: #fff;
   padding: 15px;
   border-radius: 0.4rem;
 }
