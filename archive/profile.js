@@ -20,20 +20,36 @@ if(postForm){
         newPost.value = "";
       }
     });
+    // Add a submit event listener to the form
+form.addEventListener("submit", async (event) => {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the value of the input
+  const content = input.value;
+
+  // Send a POST request to the server with the new post content
+  try {
+      const response = await fetch("/api/posts", {
+          method: "POST",
+          body: JSON.stringify({ content }),
+          headers: { "Content-Type": "application/json" },
+      });
+
+      // Check if the post was successfully created
+      if (response.ok) {
+          alert("Post created successfully!");
+          input.value = ""; // Clear the input
+      } else {
+          alert("Error creating post");
+      }
+  } catch (error) {
+      console.error(error);
+  }
+});
+
 }
 
-const data = {
-  categories: [
-      {
-          name: "Categories",
-          subcategories: [
-              { name: "Coffee Shops" },
-              { name: "Parks" },
-              { name: "Restaurants" }
-          ]
-      }
-  ]
-};
+
 var template = Handlebars.compile(document.getElementById("template").innerHTML);
 const html = template(data);
 document.getElementById("some-element").innerHTML = html;

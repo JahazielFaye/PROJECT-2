@@ -1,3 +1,57 @@
+body{
+  background-color: black;
+}
+h1 {
+  font-size: 35px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+  background-color: #333;
+  color: white;
+  height: 50px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.menu.align-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu.align-right li {
+  margin-right: 20px;
+}
+
+.menu.align-right li a {
+  color:  rgb(134, 90, 210);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+}
+.menu.align-right li a:hover {
+  color: #10608e;
+  text-decoration: border;
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 0.3em;
+}
+
+footer p, footer a {
+  color: #fff;
+}
+
+
 body {
   color:aliceblue;
   background-color: black;
@@ -7,6 +61,7 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+
 }
 /*style for form elemets*/
 form {
@@ -20,13 +75,12 @@ label {
 }
 /*signup and signin text link color*/
 .signup-text, .signin-text{
-  color: orangered;
+  color: rgb(134, 90, 210);
 }
 /*orange hubl logo*/
 .logo{
-  width: 500px;
-  height: 300px;
-  display:inline-block;
+  width: 550px;
+  height: 350px;
   /*style for email and password fields*/
 }
 input[type="email"],
@@ -40,7 +94,7 @@ input[type="text"] {
 /*styling for submit button*/
 input[type="submit"] {
   width: 100%;
-  background-color: #10608e;
+  background-color: #7f3cc1;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -50,7 +104,7 @@ input[type="submit"] {
 }
 /*background color change of the submit button when hovered over it*/
 input[type="submit"]:hover {
-  background-color: #bc7440;
+  background-color: #10608e;
 }
 
 #logout {
