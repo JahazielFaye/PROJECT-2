@@ -27,22 +27,17 @@ URL:
 
 ## Built With
 
-* [Node.js ](link) - Description of how it is used in the project
-* [Express.js](link) - Description of how it is used in the project
-
-## Contributing
-
-Instructions on how to contribute to the project, including code of conduct and pull request process.
+* [Node.js ] - Node.js is used in our project to run the server for development.
+* [Express.js] - Express.js was used in our project to run all requests needed for our application
+* [Handlebars} - Handlebars were used in the application to build out all of the HTML needed for our pages.
 
 
 ## Authors
 
-* **Name** - *Initial work* - [Username](link)
+* *George Karamanis - Gkaramanis1
+* Jahaziel Ponseran - JahazielFaye
+* Christopher Doolhoff - ChristopherDoolhoff
+* Myles NIchols - MylesNichols
 
-See also the list of [contributors](link) who participated in this project.
-
-## License
-
-## Acknowledgments
-
-* etc
+## Licenses
+* MIT License
