@@ -1,0 +1,33 @@
+[
+    {
+      "name": "The Wizarding World of Harry Potter",
+      "description": "Step inside a world where magic is real. Within Universal’s Islands of Adventure™ theme park you can visit the iconic Hogwarts™ castle and explore Hogsmeade™ village. And, at Universal Studios Florida™ theme park, you can enter Diagon Alley™ to enjoy a multi-dimensional thrill ride, magical experiences, and more. Get ready to explore more of Harry Potter’s world than ever before. With a Park-to-Park Ticket, you can board the Hogwarts™ Express* and travel between both Hogsmeade™ in Universal’s Islands of Adventure™ and Diagon Alley™ in Universal Studios Florida™. *Park-to-Park admission ticket required and additional restrictions apply",
+      "website": "https://www.universalorlando.com/web/en/us",
+      "user_id": 1
+    },
+    {
+        "name": "SeaWorld",
+        "description": "Immerse yourself in wonder at SeaWorld® Orlando, where the aquatic world comes alive. Only here can you experience Orlando's new tallest, fastest and longest roller coaster, Mako, named for one of the ocean’s fastest known sharks. Then, see the world through the eyes of a penguin in the thrilling, chilling adventure of Antarctica: Empire of the Penguin™, and laugh to the all-new Clyde & Seamore’s Sea Lion High™ show. Here you can also climb aboard and ride the mighty Manta®, experience the power and grace of killer whales in the awe-inspiring Shamu® show One Ocean®, and share an epic voyage with sea turtles on the 3D 360 TurtleTrek®.",
+        "website": "https://seaworld.com/orlando/",
+        "user_id": 4
+      },
+      {
+        "name": "Disney Springs",
+        "description": "Disney World's shopping and dining area consists of Marketplace, Pleasure Island and West Side.",
+        "website": "https://www.disneysprings.com/?CMP=OKC-wdw_TA_415",
+        "user_id": 3
+      },
+      {
+        "name": "Fun Spot America",
+        "description": "A top-notch family fun theme park, with Orlando's only wooden roller coaster White Lightning, Freedom Flyer, a family suspended steel coaster, multi-level go-kart tracks, the world's 2nd tallest SkyCoaster at 250 ft, a 101-foot high Ferris wheel, Bumper Kars, Bumper Boats, and of course, a giant Arcade along with other assorted family and thrill rides for adults and children. Includes Gator Spot, a 15,000 sq ft oasis with over 100 gators, exotic reptiles and birds!",
+        "website": "https://fun-spot.com/",
+        "user_id": 4
+      },
+      {
+        "name": "Walt Disney World Resort",
+        "description": "This world-famous Resort consists of four Theme Parks (Magic Kingdom Park, Epcot, Disney’s Hollywood Studios, Disney’s Animal Kingdom Theme Park), two Water Parks (Disney’s Typhoon Lagoon Water Park, Disney’s Blizzard Beach Water Park), over 25 Resort hotel properties, and a variety of additional entertainment offerings.",
+        "website": "https://disneyworld.disney.go.com/?CMP=OKC-wdw_TA_421",
+        "user_id": 1
+      }
+  ]
+  
