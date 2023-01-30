@@ -44,7 +44,7 @@ var feedResults = function (data) {
       var repoInfo =
         "Name: " +
         data[i].name +
-        "<br>Dexcription" +
+        "<br>Description: " +
         data[i].description +
         "<br>website: " +
         `<a href="${data[i].website}" target="_blank">${data[i].website}</a>`+
